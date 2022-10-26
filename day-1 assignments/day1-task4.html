@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task4</title>
+    </head>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr 1fr;
+            grid-template-rows: 750px ;
+        }
+        .registerform{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgba(128, 128, 128, 0.366);
+            margin-bottom: 10px;
+        }
+       .registerformsetting{
+        margin-top: 50px;
+       }
+       .textdesign{
+        padding: 5px;
+        width: 250px;
+       }
+        button{
+            margin-right: 50px;
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="registerform">
+                <div class="registerformsetting">
+                    <h1 align="center"><u>Registration Form</u></h1>
+                    <form>
+                        <table align="center">
+                            <tr>
+                                <td>Upload Profice Pic</td>
+                                <td><input type="file" class="textdesign"></td>
+                            </tr>
+                            <tr>
+                                <td>First Name</td>
+                                <td><input type="text" class="textdesign" placeholder="enter your firstname"></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td><input type="text" class="textdesign" placeholder="enter your lastname"></td>
+                            </tr>
+                            <tr>
+                                <td>age</td>
+                                <td><input type="number" class="textdesign"></td>
+                            </tr>
+                            <tr>
+                                <td>e-mail</td>
+                                <td><input type="email" class="textdesign"></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><input type="password" class="textdesign" placeholder="enter your password"></td>
+                            </tr>
+                            <tr>
+                                <td>confirm Password</td>
+                                <td><input type="password" class="textdesign" placeholder="confirm your password"></td>
+                            </tr>
+                            <tr>
+                                <td>Date of Birth</td>
+                                <td><input type="date" class="textdesign"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td><input type="radio" value="">Male
+                                    <input type="radio" value="">Female
+                                    <input type="radio" value="">Other
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td><Textarea cols="30" rows="5" class="textdesign"></Textarea></td>
+                            </tr>
+                            <tr>
+                                <td>
+    
+                                </td>
+                                <td>
+                                    <button>submit</button>
+                                    <button>reset</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

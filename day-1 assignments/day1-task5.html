@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task5</title>
+    </head>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgba(238, 8, 8, 0.621);
+        }
+
+        h1{
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+           box-shadow: 0 5px 15px rgba(196, 4, 4, 0.2);
+        }
+        #cards{
+            width: 1000px;
+            height: 400px;
+            margin-left: 250px;
+            margin-right: 200px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(196, 4, 4, 0.2);
+            display: flex;
+        }
+        .card{
+            width: 200px;
+            height: 300px;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+       
+        img{
+            width: 100%;
+            height: 50%;
+        }
+        .cardbody{
+            text-align: center;
+            font-weight: bold;
+        }
+        .cardfooter{
+            margin-left: 50px;
+        }
+        .audio{
+            text-align: center;
+        }
+       .audio p{
+        margin-top: 70px;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        function songplay(id){
+            document.getElementById(id).play();
+        }
+        function songpuase(id){
+            document.getElementById(id).pause();
+        }
+    </script>
+    <body>
+        <div class="container">
+                <h1>MEDIA ELEMENTS</h1>
+        </div>
+        <div class="audio">
+            <p><i>audio</i></p>
+        </div>
+        <div id="cards">
+            <div class="card">
+            
+                    <img src="https://1.bp.blogspot.com/-ps7tCm7BiRU/XmWyuK_PcyI/AAAAAAAAA3I/PUL4nEbzHvQ8XcCS1z77IFMSv_-63EflQCLcBGAsYHQ/s1600/a4f87fe28c7e57a15d319a2ad5e529b2.jpg"
+                        alt="">
+                    <div class="cardbody">
+                        
+                    <p>Baaghi-3</p>
+                    </div>
+                    <div class="cardfooter">
+                        <audio  controls src="../[iSongs.info] 01 - Thaar Maar Thakkar Maar.mp3" style="display: none;"  type="audio/mp3" id="bhagi"></audio>
+                        <button style="background-color: green; color: white;width: 50px;" onclick="songplay('bhagi')">play</button>
+                        <button style="background-color: orange;color: white;width: 50px;" onclick="songpuase('bhagi')">pause</button>
+                    </div>
+            
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.FUUj3RkvRvvE_-K5rQz6RAHaEl?pid=ImgDet&rs=1" alt="">
+                <div class="cardbody">
+                    <p>Angerzi Medium</p>
+                    </div>
+                    <div class="cardfooter">
+                        <audio  controls src="../[iSongs.info] 02 - Lokale Gelavaga.mp3" style="display: none;"  type="audio/mp3" id="Angerzi"></audio>
+                        <button style="background-color: green; color: white;width: 50px;" onclick="songplay('Angerzi')">play</button>
+                        <button style="background-color: orange;color: white;width: 50px;" onclick="songpuase('Angerzi')">pause</button>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="https://3.bp.blogspot.com/-Xu-F_R06LMs/XG05mC3aURI/AAAAAAAAqdc/HZO91dEeRusnt7sQr2ToLrk-2gTDW5lAgCLcBGAs/s1600/Kesari-Poster-6.jpg" alt="">
+                <div class="cardbody">
+                    <p>Kesari</p>
+                    </div>
+                    <div class="cardfooter">
+                        <audio  controls src="../[iSongs.info] 03 - Life Of Ram.mp3" style="display: none;" type="audio/mp3" id="kesari"></audio>
+                        <button style="background-color: green; color: white;width: 50px;" onclick="songplay('kesari')">play</button>
+                        <button style="background-color: orange;color: white;width: 50px;" onclick="songpuase('kesari')">pause</button>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task6
+        </title>
+        <style>
+            body{
+                margin: 0px;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                display: grid;
+                grid-template-rows:100px 1fr 50px 50px;
+            }
+            .header{
+                background-color: rgba(32, 101, 32, 0.725);
+                text-align: center;
+                position: relative;
+            }
+            #item{
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+            }
+            .footer{
+                background-color: rgba(32, 101, 32, 0.725);
+            }
+            .footer p{
+                color: white;
+            }
+            .body{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .section{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-left: 5px;
+            }
+            .article{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-left: 5px;
+            }
+            .aside{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-left: 5px;
+            }
+            .iframe{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-left: 5px;
+            }
+            iframe{
+                background-image:url(https://cdn5.vectorstock.com/i/thumb-large/31/79/clouds-vector-923179.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <p id="item">SEMANTIC AND NON-SEMANTIC</p>
+            </div>
+            <div class="body">
+                <div class="section">
+                    <h1>SECTION</h1>
+                    <div style="width:100%; height: 50px;">
+                        <p>This is a <b>section</b> Column which appears just after Header and Navbar and at left of the web
+                            page.</p>
+                        <p><b>Semantic elements</b> tell everything about its content like
+                            <b>article,aside,figcaption,p,h1,figure,footer.</b></p>
+                        <p><b>Non-Semantic elements</b> tell nothing about its content like <b>div,span</b></p>
+                    </div>
+                </div>
+                <div class="article">
+                    <h2>Article</h2>
+                    <p><b>Article</b> column liesbelow the <b>Section</b> Column.</p>
+                    <p>After this column there is a footer in this web page.</p>
+                    
+                </div>
+                <div class="aside">
+                    <h3>ASIDE</h3>
+                    <p><b>Aside</b> Column is at right side of the page.</p>
+                    <p><b>IFrame</b> is attached below this Aside.</p>
+                </div>
+                <div class="iframe">
+                    <h2>Iframe</h2>
+                    <iframe src="" frameborder="1" width="80%" height="60%">
+                    
+                    </iframe>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Blog By:SANDEEP</p>
+            </div>
+        </div>
+    </body>
+</html>
