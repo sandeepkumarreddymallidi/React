@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>id*</label><label class="imp hide" id="Error">This field is required.</label>
+                        <input type="text" name="id" id="id">
+                    </div>
+                    <div>
+                        <label>name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label>age</label>
+                        <input type="text" name="age" id="age">
+                    </div>
+                    <div>
+                        <label>email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div  class="buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>age</th>
+                            <th>email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="operationscript.js"></script>
+</body>
+
+</html>

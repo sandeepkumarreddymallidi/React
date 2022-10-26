@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sample</title>
+    </head>
+    <script>
+        function buttonclick(){
+           document.getElementById("labname").innerHTML= document.getElementById("name").value;
+           document.getElementById("labage").innerHTML= document.getElementById("age").value;
+           document.getElementById("labemail").innerHTML= document.getElementById("email").value;
+           document.getElementById("labdob").innerHTML= document.getElementById("dob").value;
+           var radio= document.getElementsByName("gender");
+           for(i=0;i<radio.length;i++){
+            if(radio[i].checked){
+                document.getElementById("labgender").innerHTML=radio[i].value;
+            }
+           }
+           var foods= document.getElementsByName("food");
+           var values=[];
+           for(i=0;i<foods.length;i++){
+            if(foods[i].checked==true){
+                values.push(foods[i].value);
+            }
+           }
+           document.getElementById("labfood").innerHTML=values.toString();
+          var dis= document.getElementById('valuesdisplay').style.display;
+           if(dis=='block'){
+           document.getElementById('valuesdisplay').style.display='none';
+           }
+           else{
+            document.getElementById('valuesdisplay').style.display='block';
+           }
+        }
+    </script>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgba(164, 11, 11, 0.597);
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        td{
+            padding: 5px;
+        }
+        #valuesdisplay{
+            display: none;
+        }
+        table {
+            width: 400px;
+            height: 400px;
+        }
+        .x{
+            width: 97%;
+            height: 90%;
+            border-radius: 10px;
+            border: none;
+        }
+        p{
+            width: 60%;
+        }
+        #btn{
+            width: 50%;
+            height: 90%;
+            background-color: rgba(21, 133, 21, 0.689);
+            border-radius: 10px;
+            border:none;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div>
+                <form>
+                    <h1 style="text-align: center;">Registration Form</h1>
+                    <table align="center" border="1">
+                        <tr>
+                            <td>
+                                name:
+                            </td>
+                            <td>
+                                <input type="text" id="name" class="x">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                age:
+                            </td>
+                            <td>
+                                <input type="number" id="age" class="x">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                email:
+                            </td>
+                            <td>
+                                <input type="text" id="email" class="x">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                date of birth:
+                            </td>
+                            <td>
+                                <input type="date" id="dob" class="x">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender:
+                            </td>
+                            <td>
+                                <input type="radio" name="gender"" value="male"><label>male</label>
+                                <input type="radio" name="gender" value="female"><label>female</label>
+                                <input type="radio" name="gender" value="other"><label>other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                food:
+                            </td>
+                            <td>
+                                <input type="checkbox" name="food"" value="briyani"><label>briyani</label>
+                                <input type="checkbox" name="food" value="chicken fry"><label>chicken fry</label>
+                                <input type="checkbox" name="food"" value="dal"><label>dal</label>
+                                <input type="checkbox" name="food" value="fish"><label>fish</label>	<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="button" id="btn" onclick=buttonclick() value="register"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="valuesdisplay">
+                <h1 style="text-align: center;">getting values</h1>
+                <table align="center" border="1"> 
+                    <tr>
+                        <td>
+                            entered name                
+                        </td>
+                        <td>
+                            <p id="labname"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            entered age                
+                        </td>
+                        <td>
+                            <p id="labage"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            entered email                
+                        </td>
+                        <td>
+                            <p id="labemail"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            entered date of birth                
+                        </td>
+                        <td>
+                            <p id="labdob"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            gender is                
+                        </td>
+                        <td>
+                            <p id="labgender"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            favourate food                
+                        </td>
+                        <td>
+                            <p id="labfood"></p>
+                        </td>
+                    </tr>
+                </table> 
+            </div>   
+        </div>   
+    </body>
+</html>
