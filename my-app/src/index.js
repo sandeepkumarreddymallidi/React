@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import Employee from './Employee';
 import reportWebVitals from './reportWebVitals';
-
+import CounterFunction from './CounterFunction'
+import Student from './StudentData';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Employee />
+
+  <Student/>
+  // <CounterFunction/>
+  //<Employee />
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
