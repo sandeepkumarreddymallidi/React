@@ -9,12 +9,7 @@ import Student from './StudentData';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <Student/>
-  // <CounterFunction/>
-  //<Employee />
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
+<App/>
 );
 
 // If you want to start measuring performance in your app, pass a function
