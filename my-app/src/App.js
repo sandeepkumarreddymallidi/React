@@ -3,24 +3,36 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// import {BrowserRouter,Routes,Route} from 'react-router-dom'
-// import Home  from "./pages/Home";
-// import About  from "./pages/About";
-// import Products  from "./pages/Products";
-// import Error from "./pages/Error"
-// import ShareLayout from './pages/SharedLayout';
-// import Singleproduct from './pages/Singleproduct';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home  from "./pages/Home";
+import About  from "./pages/About";
+import Products  from "./pages/Products";
+import Error from "./pages/Error"
+import ShareLayout from './pages/SharedLayout';
+import Singleproduct from './pages/Singleproduct';
 
 import Table from './apisetup/Table';
 import Sample from './apisetup/Sample';
 import UsingFetch from './apisetup/UsingFetch';
- function App() {
+import AppRouting from './routing/AppRouting';
+import Counter from './lifeCycle.js/Counter';
+import LocalStorage from './LocalStorage.js/LocalStorage';
+import Usecontext from './Hooks/usecontext';
+import Header from './navbar/Header';
+import Navbar from './navbar/Navbar';
+function App() {
    return (
      <div className="App">
-      <Sample/>
+      {/* <Navbar/> */}
+      {/* <Header/> */}
+      {/* <Usecontext/> */}
+      {/* <LocalStorage/> */}
+      {/* <Counter/> */}
+      {/* <AppRouting/> */}
+      {/* <Sample/> */}
             {/* <UsingFetch/> */}
       {/* <EmployeeExample/> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<ShareLayout></ShareLayout>}>
             <Route index element={<Home />} />
@@ -32,7 +44,7 @@ import UsingFetch from './apisetup/UsingFetch';
           </Route>
 
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
      </div>
   );
 }
