@@ -1,0 +1,13 @@
+
+thead>tr{
+    background-color: #dddddd;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 20px;
+}
+.listtr:nth-child(odd) {
+    background-color: #dddddd;
+}
