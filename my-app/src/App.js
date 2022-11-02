@@ -2,6 +2,7 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Students from './student-components/StudentDetails';
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home  from "./pages/Home";
@@ -20,6 +21,8 @@ import LocalStorage from './LocalStorage.js/LocalStorage';
 import Usecontext from './Hooks/usecontext';
 import Header from './navbar/Header';
 import Navbar from './navbar/Navbar';
+import Employee from './Employee'
+import FunctionEmployee from './day-6/FunctionEmployee';
 function App() {
    return (
      <div className="App">
@@ -32,7 +35,9 @@ function App() {
       {/* <Sample/> */}
             {/* <UsingFetch/> */}
       {/* <EmployeeExample/> */}
-      <BrowserRouter>
+      {/* <Students/> */}
+      <FunctionEmployee/>
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<ShareLayout></ShareLayout>}>
             <Route index element={<Home />} />
@@ -44,7 +49,7 @@ function App() {
           </Route>
 
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
      </div>
   );
 }
