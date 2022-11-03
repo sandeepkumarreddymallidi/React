@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Axios from './axios/Axios';
+import GetData from './axios/GetData';
+import Update from './axios/Update';
+import NavbarForm from './axios/NavbarForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Update/> */}
+      {/* <Axios/> */}
+      {/* <GetData/> */}
+      <NavbarForm/>
     </div>
   );
 }

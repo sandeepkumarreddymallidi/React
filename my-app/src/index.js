@@ -6,10 +6,11 @@ import Employee from './Employee';
 import reportWebVitals from './reportWebVitals';
 import CounterFunction from './CounterFunction'
 import Student from './StudentData';
+import Axios from './axios/Axios';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <Axios/>
 
-<App/>
 );
 
 // If you want to start measuring performance in your app, pass a function

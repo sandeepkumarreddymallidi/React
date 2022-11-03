@@ -23,9 +23,11 @@ import Header from './navbar/Header';
 import Navbar from './navbar/Navbar';
 import Employee from './Employee'
 import FunctionEmployee from './day-6/FunctionEmployee';
+import Axios from './axios/Axios';
 function App() {
    return (
      <div className="App">
+      {/* <Axios/> */}
       {/* <Navbar/> */}
       {/* <Header/> */}
       {/* <Usecontext/> */}
@@ -36,7 +38,7 @@ function App() {
             {/* <UsingFetch/> */}
       {/* <EmployeeExample/> */}
       {/* <Students/> */}
-      <FunctionEmployee/>
+      {/* <FunctionEmployee/> */}
       {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<ShareLayout></ShareLayout>}>

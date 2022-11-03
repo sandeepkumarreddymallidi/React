@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import Tables from "./Tables";
 function Sample(){
     const [products, setProducts] = useState([]);

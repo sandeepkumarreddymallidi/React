@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import React, { useReducer } from "react";
 const initialState = {count: 0};
 function reducer(state, action){
     switch (action.type){

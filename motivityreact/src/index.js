@@ -8,8 +8,8 @@ import StateExample from './StateExample';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <StateExample/>
+    <App />
+    {/* <StateExample/> */}
   </React.StrictMode>
 );
 
